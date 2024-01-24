@@ -1,4 +1,4 @@
-// phew… not a lot going on here. Please add some code!
+////--------------------Bookmark --------------------
 
 const bookmarkButton = document.querySelector('[js-data="bookmark"]');
 
@@ -23,30 +23,24 @@ bookmarkButton.addEventListener("click", handleBookmarkButtonClick);
 //   bookmarkButton.addEventListener("click", handleBookmarkButtonClick);
 // });
 
-// Versuch 1
-// const bookmarkButtons = document.querySelector("bookmark");
+// const answer = document.querySelector("p");
+// const answerButton = document.querySelector('[js-data="answer-button"]');
 
-// function handleBookmarkButtonClick(event) {
-//   const clickedBookmark = event.currentTarget;
+// function handleAnswerButtonClick(event) {
+//   const clickedAnswerButton = event.target;
 
-//   clickedBookmark.classList.toggle("bookmark--active");
+//   clickedAnswerButton.classList.toggle("card__answer--active");
 // }
 
-// bookmarkButtons.addEventListener("click", handleBookmarkButtonClick);
+// answerButton.addEventListener("click", handleAnswerButtonClick);
 
-// Versuch 2
-// const bookmarkButtons = document.getElementsByClassName("bookmark");
+////--------------------Answer--------------------
 
-// function handleBookmarkButtonClick(event) {
-//   const clickedBookmark = event.currentTarget;
+const answer = document.querySelector("p");
+const answerButton = document.querySelector('[js-data="answer-button"]');
 
-//   clickedBookmark.classList.toggle("bookmark--active");
-// }
+function handleAnswerButtonClick(event) {
+  answer.classList.toggle("card__answer--active");
+}
 
-// bookmarkButtons.addEventListener("click", handleBookmarkButtonClick);
-
-// document.addEventListener("click", function (event) {
-//   if (event.target.classList.contains("bookmark")) {
-//     handleBookmarkButtonClick(event);
-//   }
-// });
+answerButton.addEventListener("click", handleAnswerButtonClick);
