@@ -11,6 +11,7 @@ function handleBookmarkButtonClick(event) {
 bookmarkButton.addEventListener("click", handleBookmarkButtonClick);
 
 // Erfolgreicher Versuch querySelectorAll
+// --------------------------------------
 // const bookmarkButtons = document.querySelectorAll(".bookmark");
 
 // function handleBookmarkButtonClick(event) {
