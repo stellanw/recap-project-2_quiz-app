@@ -10,10 +10,61 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Add a new Quiz-Card</h1>
+      <h1 class="header__title">Quiz-Card Generator</h1>
     </header>
+
     <main>
-      <p>empty main</p>
+      <form>
+        <h2>Create your own Quiz-Card here!</h2>
+        <label for="new-question">Question</label>
+        <textarea
+          name="new-question"
+          id="new-question"
+          placeholder="Type in your Question here..."
+        ></textarea>
+
+        <label for="new-answer">Answer</label>
+        <textarea
+          name="new-answer"
+          id="new-answer"
+          placeholder="Type in your Question here..."
+        ></textarea>
+
+        <label for="tags">Tags</label>
+        <input
+          type="text"
+          name="tags"
+          id="tags"
+          placeholder="Add some Tags here..."
+        />
+
+        <input type="submit" value="Create" class="form_button-submit" />
+      </form>
+
+      <ul class="card-list">
+        <li class="card-list__item">
+          <article class="card">
+            <h2 class="card__question">
+              In the Kingdom Heart series who provides the english voice for
+              Master Eraqus?
+            </h2>
+
+            <button
+              class="card__button-answer"
+              type="button"
+              js-data="answer-button"
+            >
+              Show answer
+            </button>
+            <p class="card__answer">Mark Hamill</p>
+            <ul class="card__tag-list">
+              <li class="card__tag-list-item">#kingdomheart</li>
+              <li class="card__tag-list-item">#mastereraqus</li>
+              <li class="card__tag-list-item">#english voices</li>
+            </ul>
+          </article>
+        </li>
+      </ul>
     </main>
 
     <nav class="navigation">
